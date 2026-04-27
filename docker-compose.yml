@@ -1,26 +1,26 @@
 version: '3.8'
 services:
   movies:
-    image: divyam1002/paytmmovie:latest
+    image: divyam1002/paytmmovies:latest
     ports:
-      - "82:80"
+      - "81:80"
     deploy:
       replicas: 3
   train:
     image: divyam1002/paytmtrain:latest
     ports:
-      - "83:80"
+      - "82:80"
     deploy:
       replicas: 3
   recharge:
     image: divyam1002/paytmdth:latest
     ports:
-      - "84:80"
+      - "83:80"
     deploy:
       replicas: 3
   dth:
     image: divyam1002/paytmrecharge:latest
     ports:
-      - "85:80"
+      - "84:80"
     deploy:
       replicas: 3
